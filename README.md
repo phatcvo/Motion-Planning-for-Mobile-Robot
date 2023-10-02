@@ -1,8 +1,3 @@
-# Turtlebot3_ROS_2Dplanning
-
-This repo contains a simulation example of [Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/#overview) motion planning in environment with moving obstacles. 
-
-
 ## Get ready
 To install dependent packages, folloe the instructions in 
 1. [Setup turtlebot3 on PC](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup)
@@ -79,5 +74,6 @@ To change the goal of the robot, run
 ```
 $ roslaunch demo_teleop turtlebot3_teleop_key.launch
 ```
+## Reference
 
-![GitHub Logo](/pic/2d_demo.gif)
+[Turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/#overview) motion planning in environment with moving obstacles. 
