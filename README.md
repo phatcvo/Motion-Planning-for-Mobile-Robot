@@ -2,28 +2,28 @@
 To install dependent packages, folloe the instructions in 
 1. [Setup turtlebot3 on PC](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#pc-setup)
     ```
-    # Install ROS (melodic for Ubuntu 18.04)
+    # Install ROS (noetic for Ubuntu 20.04)
     $ sudo apt update
     $ sudo apt upgrade
-    $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic.sh
-    $ chmod 755 ./install_ros_melodic.sh 
-    $ bash ./install_ros_melodic.sh
+    $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic.sh
+    $ chmod 755 ./install_ros_noetic.sh 
+    $ bash ./install_ros_noetic.sh
     
     # Install Dependent ROS Packages
-    $ sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy \
-      ros-melodic-teleop-twist-keyboard ros-melodic-laser-proc \
-      ros-melodic-rgbd-launch ros-melodic-depthimage-to-laserscan \
-      ros-melodic-rosserial-arduino ros-melodic-rosserial-python \
-      ros-melodic-rosserial-server ros-melodic-rosserial-client \
-      ros-melodic-rosserial-msgs ros-melodic-amcl ros-melodic-map-server \
-      ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro \
-      ros-melodic-compressed-image-transport ros-melodic-rqt* \
-      ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers
+    $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
+      ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
+      ros-noetic-rgbd-launch ros-noetic-depthimage-to-laserscan \
+      ros-noetic-rosserial-arduino ros-noetic-rosserial-python \
+      ros-noetic-rosserial-server ros-noetic-rosserial-client \
+      ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server \
+      ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
+      ros-noetic-compressed-image-transport ros-noetic-rqt* \
+      ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
       
     # Install TurtleBot3 via Debian Packages
-    $ sudo apt-get install ros-melodic-dynamixel-sdk
-    $ sudo apt-get install ros-melodic-turtlebot3-msgs
-    $ sudo apt-get install ros-melodic-turtlebot3
+    $ sudo apt-get install ros-noetic-dynamixel-sdk
+    $ sudo apt-get install ros-noetic-turtlebot3-msgs
+    $ sudo apt-get install ros-noetic-turtlebot3
     
     # Additional setup
     echo 'export TURTLEBOT3_MODEL=waffle' >> ~/.bashrc 
@@ -31,7 +31,7 @@ To install dependent packages, folloe the instructions in
 2. [Install Simulation Package](https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#gazebo-simulation). 
     ```
     $ cd ~/<your_dir>/catkin_ws/src/
-    $ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+    $ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
     $ cd ~/<your_dir>/catkin_ws && catkin_make
     ```
     Now you can test the installation with command: `$ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch`
@@ -51,9 +51,9 @@ To install dependent packages, folloe the instructions in
       ```
 5. Install packages
   - Install ROS related packages:
-    - `$ sudo apt-get install ros-melodic-driver-base`
-    - `$ sudo apt-get install ros-melodic-pol-ros`
-    - `$ sudo apt-get install ros-melodic-tf2-sensor-msg`
+    - `$ sudo apt-get install ros-noetic-driver-base`
+    - `$ sudo apt-get install ros-noetic-pol-ros`
+    - `$ sudo apt-get install ros-noetic-tf2-sensor-msg`
   - Install libcurses5-dev`$ sudo apt-get install libcurses5-dev`
   - Install (update) basic packages: ``$ python -m pip install --user numpy scipy matplotlib``
   - Install pyclipper: ``$ pip install pyclipper`` (you may need `$ pip install --upgrade setuptools` if am error occures)
